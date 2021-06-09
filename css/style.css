@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: arial;
+    font-weight: 600;
 }
 
 body{
@@ -13,7 +14,8 @@ main{
  width: 80%;
  margin-top: 40px;
  margin-left: 10%;
- background-color: #ffffff;   
+ background-color: #ffffff;
+ border-radius: 10px;   
 }
 
 /* header */
@@ -32,7 +34,8 @@ main{
     vertical-align: middle;
 }
 
-#logo-text{   
+#logo-text{  
+    vertical-align: middle;
 }
 /* / header */
 
@@ -41,17 +44,20 @@ main{
 /* main  */
 
 .upper-bar{
+  padding-left: 40px;
   height: 50px;  
   line-height: 50px;
   vertical-align: middle;
-  border-bottom: 2px solid grey;
+  border-bottom: 3px solid #FAFBFC;
 }
 
+.lists{
+ padding-left: 40px;
+}
 
 #task-button{
     background-color: #47ADF1;
-    color: rgb(255, 255, 255);
-    margin: 10px;
+    color: #ffffff;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #47ADF1;
@@ -61,28 +67,27 @@ main{
 #section-button{
     background-color: #ffffff;
     color: grey;
-    margin: 10px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid grey;
 }
 
 .activity{
-    margin: 15px;
+    margin: 20px;
 }
 
 
 .green-tick{
-    padding: 2px;
+    padding: 3px;
     color: green;
-    border: 1px solid green;
+    border: 2px solid green;
     border-radius: 50%;
 }
 
 .red-cross{
-    padding: 2px;
+    padding: 3px;
     color: red;
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 50%;
 }
 
@@ -91,6 +96,8 @@ main{
 }
 
 .category{
+    font-size: 12px;
+    font-weight: bold;
     padding: 5px;
     color: white;
     border-radius: 10px;  
