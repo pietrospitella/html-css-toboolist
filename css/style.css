@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial;
-    font-weight: 600;
 }
 
+/* common */
+
 body{
+    font-family: arial, sans-serif;
+    font-weight: 600;
     background-color: #F6F8F9;
 }
 
@@ -14,28 +16,41 @@ main{
  width: 80%;
  margin-top: 40px;
  margin-left: 10%;
- background-color: #ffffff;
  border-radius: 10px;   
+ background-color: #ffffff;
 }
+
+.container{
+ width: 70%;
+ margin: 0 auto;
+ border-radius: 5px;   
+ background-color: white;
+}
+
+/* / common */
 
 /* header */
 
-#header-top{
-    width: 100%;
-    padding: 10px;
-    background-color: #ffffff;
-    color: #051931;
-    font-size: 40px;
-    font-weight: bold;
+header{
+height: 70px;
+background-color: white;
+line-height: 50px;
+margin-bottom: 40px;
+padding: 10px 20px;
 }
 
+
 #logo{
+    height: 100%;
     line-height: 50px;
     vertical-align: middle;
 }
 
 #logo-text{  
+    font-size: 40px;
+    font-weight: 900;
     vertical-align: middle;
+    color: #051931;
 }
 /* / header */
 
@@ -43,12 +58,13 @@ main{
 
 /* main  */
 
-.upper-bar{
+.upper-bar{  
   padding-left: 40px;
-  height: 50px;  
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 50px;
   vertical-align: middle;
-  border-bottom: 3px solid #FAFBFC;
+  border-bottom: 3px solid #F6F8F9;
 }
 
 .lists{
@@ -76,19 +92,22 @@ main{
     margin: 20px;
 }
 
+.green-tick, .red-cross{
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center; 
+}
 
 .green-tick{
-    padding: 3px;
     color: green;
-    border: 2px solid green;
-    border-radius: 50%;
+    border: 2px solid;
 }
 
 .red-cross{
-    padding: 3px;
     color: red;
-    border: 2px solid red;
-    border-radius: 50%;
+    border: 2px solid;
 }
 
 .to-do-thing{
@@ -98,9 +117,9 @@ main{
 .category{
     font-size: 12px;
     font-weight: bold;
-    padding: 5px;
+    padding: 7px;
     color: white;
-    border-radius: 10px;  
+    border-radius: 12px;  
 }
 
 .editorial{
